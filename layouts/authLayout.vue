@@ -7,8 +7,6 @@
     <slot />
   </div>
 </template>
-
-
 <style>
 
 </style>
