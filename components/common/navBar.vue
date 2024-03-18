@@ -1,18 +1,16 @@
 <script setup>
-
 import navData from "~/utilities/data/navData";
 
 definePageMeta({
     layout: "section-with-spacing",
 });
-
 </script>
 
 <template>
-    <nav class="nav">
-        <Link href="#" class="flex items-center">
-        <img src="" class="mr-3 w-48" alt="Logo" />
-        </Link>
+    <nav class="nav flex flex-row justify-around items-center shadow-lg">
+        <nuxt-link to="#" class="flex items-center">
+            <img src="/assets/image/logo.webp" class="mr-3 w-32" alt="Logo" />
+        </nuxt-link>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul
                 class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
@@ -49,7 +47,6 @@ definePageMeta({
 <style scoped>
 .link {
     color: #273052;
-    /* font-size: 1rem; */
     font-style: normal;
     font-weight: 500;
     line-height: normal;

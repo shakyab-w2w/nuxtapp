@@ -1,17 +1,17 @@
 <script setup>
-import sectionWithSpacing from '~/layouts/sectionWithSpacing.vue';
+import SectionWithSpacing from '~/layouts/sectionWithSpacing.vue';
 const year = new Date().getFullYear();
 </script>
 <template>
   <div class="bg-white">
     <!-- Main Content -->
-    <sectionWithSpacing>
+    <SectionWithSpacing>
       <div class="grid lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-2 grid-cols-2 gap-4">
         <!-- Logo Section -->
         <div class="lg:col-span-3 md:col-span-3 sm:col-span-2 col-span-2">
           <ul class="pl-0 list-none space-y-4">
             <nuxt-link to="#">
-              <li><img src="" class="w-56" alt="Logo" />
+              <li><img src="/assets/image/logo.webp" class="w-32" alt="Logo" />
               </li>
             </nuxt-link>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id esse officia vero culpa
