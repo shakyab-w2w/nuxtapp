@@ -1,17 +1,20 @@
-<script setup>
+<script setup lang="ts">
 import SectionWithSpacing from '~/layouts/sectionWithSpacing.vue';
+import logo from './logo.vue';
 const year = new Date().getFullYear();
+const company_name = 'Company Name';
 </script>
 <template>
   <div class="bg-white">
     <!-- Main Content -->
     <SectionWithSpacing>
-      <div class="grid lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-2 grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 gap-4 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-2">
         <!-- Logo Section -->
-        <div class="lg:col-span-3 md:col-span-3 sm:col-span-2 col-span-2">
-          <ul class="pl-0 list-none space-y-4">
+        <div class="col-span-2 lg:col-span-3 md:col-span-3 sm:col-span-2">
+          <ul class="pl-0 space-y-4 list-none">
             <nuxt-link to="#">
-              <li><img src="/assets/image/logo.webp" class="w-32" alt="Logo" />
+              <li>
+                <logo />
               </li>
             </nuxt-link>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id esse officia vero culpa
@@ -21,87 +24,82 @@ const year = new Date().getFullYear();
               All Rights Reserved <a href="#" class="hover:underline">{{ company_name }}</a> © {{ year }}
             </li>
           </ul>
-
         </div>
 
         <!-- Tools and Legal Sections -->
-        <div class="lg:col-span-2 md:col-span-2 sm:col-span-1 col-span-1">
+        <div class="col-span-1 lg:col-span-2 md:col-span-2 sm:col-span-1">
           <p class="mb-4 text-lg font-bold footer-heading">Tools</p>
           <ul class="flex flex-col">
             <!-- Tools Options -->
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>Link</li>
             </nuxt-link>
-            <nuxt-link to="" class="footer-li">
-              <li>
-                Link
-              </li>
-            </nuxt-link>
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>Link</li>
             </nuxt-link>
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>Link</li>
             </nuxt-link>
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
+              <li>Link</li>
+            </nuxt-link>
+            <nuxt-link to="#" class="footer-li">
               <li>Link</li>
             </nuxt-link>
           </ul>
         </div>
-        <div class="lg:col-span-2 md:col-span-2 sm:col-span-1 col-span-1">
+        <div class="col-span-1 lg:col-span-2 md:col-span-2 sm:col-span-1">
           <p class="mb-4 text-lg font-bold footer-heading">Tools</p>
           <ul class="flex flex-col">
             <!-- Tools Options -->
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>Link</li>
             </nuxt-link>
-            <nuxt-link to="" class="footer-li">
-              <li>
-                Link
-              </li>
-            </nuxt-link>
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>Link</li>
             </nuxt-link>
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>Link</li>
             </nuxt-link>
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
+              <li>Link</li>
+            </nuxt-link>
+            <nuxt-link to="#" class="footer-li">
               <li>Link</li>
             </nuxt-link>
           </ul>
         </div>
-        <div class="lg:col-span-2 md:col-span-2 sm:col-span-1 col-span-1">
+        <div class="col-span-1 lg:col-span-2 md:col-span-2 sm:col-span-1">
           <p class="mb-4 text-lg font-bold footer-heading">Legal</p>
           <ul class="flex flex-col">
             <!-- Legal Options -->
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>Terms & Conditions</li>
             </nuxt-link>
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>FAQ</li>
             </nuxt-link>
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>Cookies/Privacy Policy</li>
             </nuxt-link>
-            <nuxt-link to="" class="footer-li">
+            <nuxt-link to="#" class="footer-li">
               <li>Contact</li>
             </nuxt-link>
           </ul>
         </div>
-        <div class="lg:col-span-3 md:col-span-3 sm:col-span-2 col-span-2 space-y-4">
-          <p class=" text-lg">Subscribe to our <span class="font-bold">newsletter</span> </p>
-          <div class="border rounded overflow-hidden flex items-center justify-center">
+        <div class="col-span-2 space-y-4 lg:col-span-3 md:col-span-3 sm:col-span-2">
+          <p class="text-lg ">Subscribe to our <span class="font-bold">newsletter</span> </p>
+          <div class="flex items-center justify-center overflow-hidden border rounded">
             <font-awesome-icon icon="envelope" class="px-4" />
-            <input type="text" class="border-none flex-1">
+            <input type="text" class="flex-1 border-none">
           </div>
-          <div class="flex items-center space-x-2 justify-between">
+          <div class="flex items-center justify-between space-x-2">
             <small>We promise you won't spam</small>
-            <button class="py-1 px-5 border border-black rounded">Subscribe</button>
+            <button class="px-5 py-1 border border-black rounded">Subscribe</button>
           </div>
           <div class="flex flex-col items-end">
             <p>Find us on social medias</p>
-            <div class="text-black text-2xl">
+            <div class="text-2xl text-black">
               <font-awesome-icon icon="facebook" class="px-2" />
               <font-awesome-icon icon="linkedin" class="px-2" />
               <font-awesome-icon icon="youtube" class="px-2" />
@@ -113,7 +111,6 @@ const year = new Date().getFullYear();
       </div>
     </SectionWithSpacing>
     <!-- Footer -->
-
   </div>
 </template>
 

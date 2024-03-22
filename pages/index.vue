@@ -1,4 +1,5 @@
 <script setup>
+import SectionWithSpacing from '~/layouts/sectionWithSpacing.vue';
 import { useCounterStore } from '~/store';
 
 const store = useCounterStore();
@@ -10,7 +11,7 @@ definePageMeta({
 
 </script>
 <template>
-    <div>
-        <p class="text-red-400 font-bold text-3xl">Home Page</p>
-    </div>
+    <SectionWithSpacing>
+        <p class="text-3xl font-bold text-red-400">Home Page</p>
+    </SectionWithSpacing>
 </template>

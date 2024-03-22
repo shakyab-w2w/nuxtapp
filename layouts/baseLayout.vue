@@ -1,10 +1,10 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import Footer from '~/components/common/footer.vue';
 import NavBar from '~/components/common/navBar.vue';
 </script>
 
 <template>
-    <div class="min-h-screen flex flex-col bg">
+    <div class="flex flex-col min-h-screen bg">
         <section>
             <NavBar />
         </section>
