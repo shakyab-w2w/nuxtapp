@@ -43,22 +43,20 @@ export default {
             black: "900",
         },
         backgroundColor: {
-            "primary-blue": "#2C58F1",
-            "secondary-blue": "rgb(239,239,251)",
-            "primary-red": "#D31A30",
+            "primary": "#2C58F1",
+            "secondary": "#D31A30",
         },
         textColor: {
-            "primary-blue": "#2C58F1",
-            "secondary-blue": "rgb(239,239,251)",
+            "primary": "#2C58F1",
             heading: "273052",
-            "primary-red": "#D31A30",
+            "secondary": "#D31A30",
         },
         borderRadius: {
             xl: "1rem",
         },
         borderColor: {
-            "primary-blue": "#2C58F1",
-            "primary-red": "#D31A30",
+            "primary": "#2C58F1",
+            "secondary": "#D31A30",
         },
 
         animation: {
